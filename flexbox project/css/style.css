@@ -1,0 +1,258 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    /* background-color: blanchedalmond */
+}
+p{
+    margin: 0.75rem 0 ;
+}
+
+/* utility classes */
+
+.container{
+    max-width: 1100px;
+    margin: auto; 
+}
+
+.text-primary{
+    color: #93cb52;
+}
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.btn{
+    background-color: #93cb52;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+}
+.btn:hover{
+    background-color: #558024;
+}
+/* navbar */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    justify-content: space-between;/* isse logo aur ul wale element(home who where and contact ) ke becch me spacing ayigi aur wo dono ek ek end me chle jayenge.*/
+    z-index: 2;/* hmara jo navbar hai wo hesa sticky hai pr wo hmesa dikhe uske liye z index is 2 */
+    padding: 1rem;
+    
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;/* jite bhi items hai ul ke ander wo sb center me aa jayenge logo ke sath*/
+
+    list-style: none;
+    /* justify-content: space-evenly; */
+    /* background-color: #93cb52; */
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin:0 0.75rem ;
+}
+
+#navbar ul li a:hover
+{
+    background-color: #93cb52;
+    border-radius: 0.5rem;
+}
+
+/* Showcase*/
+#showcase{
+    background: url('../image/showcase.jpg')no-repeat center center/cover;
+
+    color: #fff;
+    height: 100vh;
+    /* opacity: ; */
+
+}
+
+#showcase .showcase-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;/* Ye tbhi work krega jb tkka isko height na mil jaye */
+    height: 100%;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0 0.25rem;
+
+    /* overlay */
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 ,0, 0 ,0.4);
+
+    /* agr hm yha pe opacity ka use krenge to sb me apply ho jayega means text me bhi prrr overlay se sirf bd image me hi iska effect hoga..*/
+
+}
+/* section what we do */
+.container h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0 ;
+}
+#what .items{
+    display: flex;
+    /* border: 2px solid black; */
+    
+}
+.item{
+    text-align: center;
+    flex: 1;
+    padding: 0 1rem;
+    /* justify-content: space-around; */
+}
+.item i {
+    background-color: #93cb52;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* section:who we are */
+#who{
+    display: flex;
+    margin: 1.5rem 0 ;
+    
+}
+#who div{
+    flex:1;
+    
+}
+
+.who-img{
+    background: url("../image/people.jpg")no-repeat center center/cover;
+}
+.who-text{
+    color: #fff;
+    background-color: #333;
+    padding: 2rem;
+    
+}
+.who-text p{
+    text-align: start;
+}
+.list{
+ list-style: none;
+
+}
+
+/* Clients */
+.clients-items{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.clients-items img{
+    width: 50%;
+    /* padding: 0.5rem; */
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.clients-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.0rem;
+}
+
+/* Section: contact */
+#contact{
+    display: flex;
+    margin-top: 2rem;
+    /* border: 2px solid black; */
+}
+#contact{
+    flex:1;
+}
+.contact-form{
+    background-color: #93cb52;
+    width: 50%;
+    height: 23rem;
+    color:white;
+    /* border: 1px solid red; */
+    /* flex:1; */
+    /* text-align: center; */
+}
+.contact-form h2 ,p {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.form-group{
+    margin: .5rem;
+}
+.contact-form label{
+    display: block;
+    font-size: 1.25rem;
+    margin-left:0.2rem;
+
+}
+.contact-form input{
+    width: 100%;
+    border: none;
+    border-radius: 10rem;
+    padding: 0.25rem;
+}
+#contact .btn{
+    margin: auto;
+    align-items: center;
+    background-color: #558024;
+    margin-top: .25rem;
+}
+#contact .btn:hover{
+    background-color: #566447;
+    color: #e8f3dc;
+}
+
+.button{
+    text-align: center;
+}
+.map img{
+    /* border: 5px solid blue; */
+    width: 100%;
+    height: 23rem;
+}
+.map{
+    width: 50%;
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    height: 3.5rem;
+    margin-top: -20px;
+}
+/* Footer section */
+
+/* AIzaSyCKii32BxNwyqKYc15WEZPe8-b9wHTzD1Y */
